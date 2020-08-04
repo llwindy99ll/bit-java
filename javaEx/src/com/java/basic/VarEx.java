@@ -9,7 +9,7 @@ public class VarEx {
 		int myAge2 =30;
 		System.out.println("My age is "+myAge);
 		System.out.println("My age2 is "+myAge2);
-		
+		//
 		myAge = myAge+1;
 		System.out.println("My age is "+ myAge);
 	}
