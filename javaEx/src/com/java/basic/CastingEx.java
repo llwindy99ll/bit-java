@@ -12,6 +12,8 @@ public class CastingEx {
 		//promotion();
 		castingEx();
 	}
+	
+	
 
 	public static void promotion() {
 		//implicit casting(암묵적 변환)
@@ -49,7 +51,8 @@ public class CastingEx {
 		short s = (short)i;
 		System.out.println("short:"+s);
 		
-		byte b =(byte)s;
+		//1234 = 1111() 1111(128) 1111(15) =
+		byte b =(byte)s;  
 		System.out.println("바이트:"+b);
 		
 		
