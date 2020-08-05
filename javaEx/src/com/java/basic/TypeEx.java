@@ -8,8 +8,18 @@ public class TypeEx {
 		//intLongTest();
 		//floatDoubleTest();
 		//booleanEx();
-		charEx();
+		//charEx();
+		finalTest();
 		
+	}
+	
+	public static void finalTest() {
+		
+		final double PI = 3.14159;
+		final int SPEED_LIMIT = 110;
+		
+		
+		System.out.println(SPEED_LIMIT);
 		
 	}
 	
