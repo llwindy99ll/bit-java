@@ -6,7 +6,45 @@ public class OperEx {
 		// TODO Auto-generated method stub
 
 		//arithOper();
-		logicalOper();
+		//logicalOper();
+		//bitOper();
+		conditionalOper();
+	}
+	
+	public static void conditionalOper() {
+		//논리비교? 참:거칫
+		int a =10;
+		System.out.println( "a : "+ ( a%2==0 ? "짝수":"혹수" ));
+		int score = 80;
+		System.out.println( "a : "+ ( score>=80 ? "Good": (score >50 ?  "Pass":"Fail") ));
+		
+		score = 40;
+		System.out.println( "a : "+ ( score>=80 ? "Good": (score >50 ?  "Pass":"Fail") ));
+		
+		score = 60;
+		System.out.println( "a : "+ ( score>=80 ? "Good": (score >50 ?  "Pass":"Fail") ));
+	}
+	
+	public static void bitOper() {
+		
+		byte b1 = 0b1101;
+		byte b2 = 0b0111;
+		
+		System.out.println("b1&b2 result: " + Integer.toBinaryString(b1&b2) );
+		System.out.println("b1|b2 result: " + Integer.toBinaryString(b1|b2) );
+		System.out.println("~b1 result: " + Integer.toBinaryString(~b1) );
+		System.out.println("b1&b2 result: " + (~b1) ); // (1)111(64+32+16=112) 0010(2)=-114
+
+		int val = 1;
+		System.out.println("val<<1 result: " + (val<<1) );
+		System.out.println("val<<1 result: " + Integer.toBinaryString(val<<1) );
+		
+		System.out.println("val<<2 result: " + (val<<2) );
+		System.out.println("val<<2 result: " + Integer.toBinaryString(val<<2) );
+		
+		System.out.println("val<<3 result: " + (val<<3) );
+		System.out.println("val<<3 result: " + Integer.toBinaryString(val<<3) );
+		
 	}
 	
 	// 비교 논리 연산
