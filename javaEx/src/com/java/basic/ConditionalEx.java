@@ -8,7 +8,88 @@ public class ConditionalEx {
 		// TODO Auto-generated method stub
 		//ifElseEx();
 		//ifElseEx2();
-		ifElseEx3();
+		//ifElseEx3();
+		//switchEx();
+		//switchEx2();
+		//whileEx();
+		dowhileEx();
+		
+	}
+	
+	public static void dowhileEx() {
+		// 숫자를 입력받아 합산
+		// 0을 입력받으면 반복을 종료
+		// 최소 한번은 실행하거나 반복조건이 loop문 안에서 결정되는경우는 do~while 
+		Scanner scanner = new Scanner(System.in);
+		
+		int num=0;
+		int total = 0;
+		
+		do {
+			System.out.println("정수입력.[0이면 종료]");
+			
+			num = scanner.nextInt();	
+			total += num;
+		}while(num !=0);
+		System.out.println("0: 입력 종료]"+"total:"+total);
+		
+	}
+	
+	public static void whileEx() {
+		// 반복문 사용해서 1-100 합 구하기
+		
+		int num=0;
+		int sum=0;
+		while(num<=100) {
+			num=num+1;
+			sum = num+sum;
+			System.out.println(num);
+		}
+		System.out.println("sum:" + sum);
+	}
+	
+	public static void switchEx2() {
+		System.out.println("1.C, 2.C++, 3.JAVA, 4.Pyton");
+		Scanner scanner = new Scanner(System.in);
+		int num = scanner.nextInt();
+		
+		switch(num) {
+		case 2:
+			System.out.println("30일");
+			break;
+		case 3:
+			System.out.println("31일");
+			break;
+		default:
+			System.out.println("관리자 문의");
+		}
+	}
+	
+	public static void switchEx() {
+		// switch는 전달받은 변수의 값을  이용해서 흐름을 제어
+		
+
+		System.out.println("1.C, 2.C++, 3.JAVA, 4.Pyton");
+		Scanner scanner = new Scanner(System.in);
+		int num = scanner.nextInt();
+		
+		switch(num) {
+		case 1:
+			System.out.println("R101");
+			break;
+		case 2:
+			System.out.println("R202");
+			break;
+		case 3:
+			System.out.println("R303");
+			break;
+		case 4:
+			System.out.println("R401");
+			break;
+		default:
+			System.out.println("관리자 문의");
+		
+		}
 	}
 	
 	public static void ifElseEx3() {
