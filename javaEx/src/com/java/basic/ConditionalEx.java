@@ -12,8 +12,46 @@ public class ConditionalEx {
 		//switchEx();
 		//switchEx2();
 		//whileEx();
-		dowhileEx();
+		//dowhileEx();
+		//forEx();
+		//continueEx();
+		breakEx();
+	}
+	
+	public static void breakEx() {
+		// 1부터 루프를 돌려서 6 과 14로 모두 나누어 떨어지는 수는?
 		
+		int num=1;
+		while(true) {
+			if(num%6 ==0 && num %14 ==0) break;
+			num++;
+		}
+		System.out.println("num:"+num);
+		
+	}
+	
+	public static void continueEx() {
+		// 1부터 100의 배수까지 for
+		// 2의 배수이거나 3의 배수이면 출력 안함
+		
+		for(int i=1; i<=100; i++) {
+			if(i%2 ==0 || i %3 ==0) continue;
+			System.out.println("i:"+i);
+		}
+	}
+	
+	public static void forEx() {
+		//반봅횟수가 정해져있을때 주로 사용
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("단을 입력하시오");
+		int dan = scanner.nextInt();
+		
+		for(int i=1; i<=9; i++) {
+			System.out.println(dan+"*"+i+"="+(dan*i));
+		}
+		
+	
 	}
 	
 	public static void dowhileEx() {
