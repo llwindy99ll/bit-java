@@ -15,7 +15,22 @@ public class ConditionalEx {
 		//dowhileEx();
 		//forEx();
 		//continueEx();
-		breakEx();
+		//breakEx();
+		randomEx();
+	}
+	
+	public static void randomEx() {
+		int rollCnt = 6;
+		int total =0;
+		
+		for(int i =1; i < rollCnt; i++) {
+			int rn =(int)(Math.random()*6)+1;
+			System.out.println(i+"번쨰 주사위"+ rn);
+			total +=rn;
+			
+		}
+		System.out.println("total:"+total);
+
 	}
 	
 	public static void breakEx() {
