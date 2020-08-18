@@ -39,7 +39,8 @@ public class summaryApp {
 		if(actor instanceof kungfu )
 			((kungfu)actor).kungfu();
 		else
-			System.out.println("ÄôÇª ¾ø´Ù");
+			actor.say();
+			//System.out.println("ÄôÇª ¾ø´Ù");
 			
 	}
 
