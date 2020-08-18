@@ -11,8 +11,8 @@ public abstract class Shape {
 	}
 	
 	//추상 메소드는 자식클래스에서 반드시 구현해야함(강제)
-	public abstract void draw();
+	//public abstract void draw();
 	//인터페이스로 변경
-	//public abstract double area();
+	public abstract double area();
 	
 }
