@@ -1,14 +1,46 @@
 package com.java.exception;
 
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
+import javax.swing.text.DefaultEditorKit.CutAction;
 
 public class ExceptionEx {
 	
 	public static void main(String[] args) {
 		//arithmeticExceptionEx();
 		//indexOutofBoundEx();
-		nullpointerExceptionEx();
+		//nullpointerExceptionEx();
+		customException();
+	}
+	
+	private static void customException() {
+		// 사용자 정의 예외 활용
+		ThrowExcept ex = new ThrowExcept();
+		
+		try {
+			//ex.excuteCheckedException();	// 반드시 예외처리를 해야 에러 없어짐
+			//ex.excuteUncheckedException(); 	// 언체크드는 문법 오류 없음
+		
+			System.out.println("10/0="+ex.divide(10, 0));
+
+		}
+		
+		 //catch(IOException e) { System.err.println("에외 메시지"+ e.getMessage()); }
+		 catch(CustomArithmeticException e) {	
+			//순서가 중요함 맨아래로 위치시 에러남
+			// 런타임 예외의 자손이므로 런타임에러보다 위에서 캐치해줘야 에러 안남
+			
+			System.out.println("사용자 정의 메시지"+ e.getMessage());
+			System.out.printf("예외상황 발생시 num1=%d, num2=%d", e.getNum1(), e.getNum2());
+			
+		}catch(RuntimeException e) {
+			System.err.println("런타임 에러:"+ e.getMessage());
+		}
+		
+		
+		
 	}
 	
 	public static void nullpointerExceptionEx() {
