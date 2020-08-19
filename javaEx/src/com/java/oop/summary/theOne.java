@@ -13,9 +13,4 @@ public class theOne extends human implements kungfu{
 	}
 
 
-	@Override
-	public void eat(String name) {
-		// TODO Auto-generated method stub
-		super.eat(name);
-	}
 }

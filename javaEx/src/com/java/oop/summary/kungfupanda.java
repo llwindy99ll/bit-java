@@ -12,11 +12,5 @@ public class kungfupanda extends panda implements kungfu{
 		System.out.printf("%s:/¾ÆºÌ~%n", name);
 	}
 
-
-	@Override
-	public void eat(String name) {
-		// TODO Auto-generated method stub
-		super.eat(name);
-	}
 	
 }
