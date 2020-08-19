@@ -12,7 +12,7 @@ public class LangClassTest {
 		Point p2 = p.getClone();
 		System.out.println("p2="+ p2);
 		
-		System.out.println("p==p2 ?"+ (p==p2));
+		System.out.println("p==p2 ?"+ (p==p2));	//서로다른 객체,, 값만 복사
 	}
 
 
