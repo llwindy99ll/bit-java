@@ -21,7 +21,7 @@ public class ExceptionEx {
 		
 		try {
 			//ex.excuteCheckedException();	// 반드시 예외처리를 해야 에러 없어짐
-			//ex.excuteUncheckedException(); 	// 언체크드는 문법 오류 없음
+			ex.excuteUncheckedException(); 	// 언체크드(런타임 에러)는 문법 오류 없음
 		
 			System.out.println("10/0="+ex.divide(10, 0));
 
