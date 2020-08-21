@@ -5,6 +5,7 @@ public class LangClassTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Point p = new Point(10,20);
+		System.out.println("Cloneable="+ (p instanceof Cloneable) );
 		
 		//JAVA의 최상위 클래스는 Object
 		// 모든클래스는 Object의 기능을  물려받는다

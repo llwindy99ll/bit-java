@@ -8,6 +8,12 @@ public class LangClassTest {
 		Scoreboard s1 = new Scoreboard(new int[] {10,20,30,40});
 		System.out.println("s1="+s1);
 		
+		Point p1 = new Point(10,20);
+		
+		System.out.println("Cloneable="+ (p1 instanceof Cloneable) );
+		
+		
+		
 		//º¹Á¦
 //		Scoreboard s2 = s1.getClone();
 //		System.out.println("s2="+s2);
