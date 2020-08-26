@@ -21,6 +21,7 @@ public class FilesStreamEx {
 			
 			int data = 0;
 			
+
 			while( (data = bis.read()) != -1 ) {
 				bos.write(data);
 			}
