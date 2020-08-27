@@ -1,4 +1,4 @@
-package com.java.network;
+package com.java.network.v2;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -65,7 +65,7 @@ public class Client {
 				bw.write(msg);
 				bw.newLine();
 				bw.flush();
-				System.out.println("=>전송한 메시지:"+ msg);
+				System.out.println("=>전송할 메시지:"+ msg);
 			
 				// 수신된 메시지
 				String rcvMsg = br.readLine();
